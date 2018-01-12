@@ -50,6 +50,10 @@ nav {
   display: inline;
 }
 
+nav.tablet-mobile {
+  display: none;
+}
+
 nav span {
   margin-right: 2rem;
 }
@@ -76,7 +80,6 @@ nav span {
 .features {
   display: flex;
   margin: 3rem auto;
-
   max-width: 100%;
 }
 
@@ -152,4 +155,127 @@ footer {
 .footer img {
   height: 1.5rem;
   margin-right: 1rem;
+}
+
+@media only screen and (max-width: 960px) {
+  header {
+    height: 22rem;
+  }
+
+  .top-menu {
+    margin-top: 0;
+  }
+
+  .main-banner {
+    background-color: white;
+    padding: 0.75rem 4rem;
+    display: inline-block;
+    margin-top: 5rem;
+    margin-right: 2rem;
+  }
+
+  .main-banner span {
+    font-size: 1.33rem;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  nav.desktop {
+    display: none;
+  }
+
+  nav.tablet-mobile {
+    display: inline;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .logo-title span {
+    display: none;
+  }
+
+  header {
+    background-position: 20%;
+    height: 17rem;
+  }
+
+  .main-banner {
+    width: 100%;
+    padding: 1rem 0;
+    margin-top: 9rem;
+    margin-right: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3.77rem auto;
+    max-width: 100%;
+  }
+
+  .feature-item.exams, .feature-item.fittings {
+    margin-bottom: 1.54rem;
+    margin-right: 0;
+  }
+
+  .feature-item {
+    height: auto;
+    justify-content: space-between;
+  }
+
+  .feature-item span {
+    margin-top: 0.77rem;
+    font-size: 0.77rem;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .info-item {
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+
+  .info-item.philosophy {
+    margin-right: 0;
+  }
+
+  .info-item-title {
+    padding: 0.5rem 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .info-item p {
+    font-size: 0.77rem;
+  }
+
+  footer {
+    max-width: 100%;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer img {
+    height: 1.5rem;
+    margin-right: 0;
+  }
+
+  .footer span {
+    display: none;
+  }
+
+  .container.footer {
+    justify-content: center;
+  }
 }
